@@ -1,1 +1,1 @@
-console.log('tweet!');
+console.log(process.env.TESTENVVAR);
