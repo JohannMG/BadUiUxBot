@@ -14,5 +14,4 @@ client.post('statuses/update', {status: generator.getNewInsight() }, function(er
   if (!error) {
     console.log(tweet);
   }
-  console.log(response);
 });
