@@ -8,6 +8,10 @@ function filenameToNewJson(filename) {
     console.log("Using: " + filename);
 
     lineReader.on('line', function readLine(line){
+        if (line.length < 4) {
+            return;
+        }
+
         var firstletter = line[0].toUpperCase();
         if (wordsByFirstLetter[ firstletter ] === undefined) {
             wordsByFirstLetter[ firstletter ] = [];
